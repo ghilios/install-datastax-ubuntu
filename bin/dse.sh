@@ -77,6 +77,7 @@ sudo apt-get -y install sysstat
 ./dse/configure_cassandra_rackdc_properties.sh $cloud_type $data_center_name
 ./dse/configure_cassandra_yaml.sh $node_ip $node_broadcast_ip $seed_node_ip
 ./dse/configure_agent_address_yaml.sh $node_ip $node_broadcast_ip $opscenter_ip
+./dse/configure_dse.sh
 ./dse/start.sh
 
 # It looks like DSE might be setting the keepalive to 300.  Need to confirm.
